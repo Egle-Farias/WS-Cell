@@ -23,18 +23,20 @@ nav.menu-lateral{
     transition: .2s;
 }
 
-nav.menu-lateral:hover{
-       width: 200px;
+nav.menu-lateral.expandir{
+    width: 200px;
 }
 
-.btn-empandir{
+.btn-expandir{
     width: 100%;
     padding-left: 10px;
+   
 }
 
-.btn-empandir > i {
+.btn-expandir >i {
     color: #fff;
     font-size: 24px;
+   
 }
 
 ul {
@@ -46,8 +48,12 @@ ul li.item-menu {
     transition: .2s;
 }
 
+ul li.ativo{
+    background-color: #13f977;
+}
+
 ul li.item-menu:hover{
-    background: #3513f9;
+    background: #f9131b;
 }
 
 ul li.item-menu a{
@@ -61,7 +67,15 @@ ul li.item-menu a{
 }
 
 ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
     margin-left: 40px;
+    opacity: 1;
+
 }
 
 ul li.item-menu a .icon > i {
